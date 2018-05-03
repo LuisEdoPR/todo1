@@ -1,3 +1,13 @@
+
+<app-my-component></app-my-component>
 <div>
-  Hola Mundo ! - {{person.name}}
+  <img [src]="imgSource">
+</div>
+<div>
+  <button (click)="count = count + 1; " >add count</button>
+  {{count}}
+</div>
+<div>
+  <button (click)="isDisabled = !isDisabled" >Change Input</button>
+  <input id="input1" [disabled] = "isDisabled" />
 </div>
